@@ -7,7 +7,7 @@ public class WordsInString {
 
     public static void main(String[] args) {
 
-        String str="Hello im rutwik ";
+        String str="Hello im rutwik   ";
 
       String  words[] =  str.trim().split( " ");
 
