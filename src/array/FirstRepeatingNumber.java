@@ -3,7 +3,7 @@ package array;
 import java.util.HashSet;
 
 public class FirstRepeatingNumber {
-    //Q. Find First Repeating Element in the array {onmly first
+    //Q. Find First Repeating Element in the array {only first }
     //input :  int arr[] = {10, 5, 3, 4, 3, 5, 6,10};
     //output : 3  { because first 3 is repeate  index =4}
     //time complexity : 0(n)
