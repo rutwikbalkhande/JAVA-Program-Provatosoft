@@ -1,5 +1,7 @@
 package com.provatosoft.assignment;
 
+import java.util.Arrays;
+
 public class BubbleSort {
 //25. Write a java program to implement Bubble sort in java.
 
@@ -8,11 +10,8 @@ public class BubbleSort {
         int arr[] ={8,7,4,1,2,3,6};
         int length=arr.length;
 
-        System.out.print("original array: ");
-        for(int i=0; i<length; i++)
-        {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.print("original array: " + Arrays.toString(arr));
+
 // main loop
         for(int i=0; i<arr.length; i++)
         {

@@ -39,17 +39,14 @@ public class ArmStrongNumber {
         System.out.println("........method 2.......");
         int len=0;
 
-        while(t1 !=0)
-        {
+        while(t1 !=0) {
             len=len+1;
             t1 = t1 / 10 ;
         }
-
         int t2=num;
         int arm=0;
 
-        while(t2 !=0)
-        {
+        while(t2 !=0) {
             int mul=1;
             int rem = t2 % 10;
 
