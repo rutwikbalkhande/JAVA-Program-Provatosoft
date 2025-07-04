@@ -3,14 +3,17 @@ package ProgramPractice;
 public class UniqueStringOrNot {
 
 //. Write a java program to find out if the given String has all Unique Characters.
-
+        //input name="Ruttwik";
+        //output = t
 
     public static void main(String[] args) {
+
+        
 
         String name="Ruttwik";
         //  String name="abcdefg";
 
-        boolean isUnique=false;
+        boolean isDublicate=false;
 
 
         for( int i=0;i<name.length();i++)
@@ -20,18 +23,20 @@ public class UniqueStringOrNot {
                 if(name.charAt(i) == name.charAt(j)) {
 
                     System.out.println("repeate character : " + name.charAt(i));
-                    isUnique = true;
+                    isDublicate = true;
                     break;
 
                 }
             }
         }
-        if(isUnique==true)
+        if(isDublicate==true)
         {
             System.out.println("String is not unique");
         }
         else{
             System.out.println("Repeated character not available");
         }
+
+
     }
 }
