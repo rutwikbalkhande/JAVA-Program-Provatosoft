@@ -6,15 +6,13 @@ import java.util.Scanner;
 
 public class SquareRoot {
 
-    void squareroot()
-    {
-        Integer number=25;
+    void squareroot() {
+        Integer number = 25;
 
-       double squareRoot= Math.sqrt(number);
+        double squareRoot = Math.sqrt(number);
 
-        System.out.println(number + " sqare Root :"+ squareRoot);
+        System.out.println(number + " sqare Root :" + squareRoot);
     }
-
 
     void sqByStream()
     {

@@ -16,7 +16,7 @@ public class PalindromeString {
         sb.append(name);
         sb.reverse();
 
-        rev=sb.toString();
+       rev=sb.toString();
         System.out.println("name: "+name);
         System.out.println("reverse name: " +rev);
 

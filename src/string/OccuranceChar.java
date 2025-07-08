@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class OccuranceChar {
 
-    //16. Write a java program to count occurrences of each character in String in
+    //. Write a java program to count occurrences of each character in String in
     //input :  str="Java Hungry";
     // output : character occurance: { =1, a=2, r=1, u=1, v=1, g=1, H=1, y=1, J=1, n=1}
 
