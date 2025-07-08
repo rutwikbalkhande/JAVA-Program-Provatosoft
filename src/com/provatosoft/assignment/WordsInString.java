@@ -9,7 +9,7 @@ public class WordsInString {
 
         String str="Hello im rutwik   ";
 
-      String  words[] =  str.trim().split( " ");
+      String  words[] =  str.trim().split( "\\s+");
 
         System.out.println(Arrays.toString(words));
       int count=0;

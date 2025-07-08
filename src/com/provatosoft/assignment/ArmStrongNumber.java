@@ -9,8 +9,7 @@ public class ArmStrongNumber {
     int t1=num;
     //arm no. 1, 153, 370, 371, 407
 
-    void Armstrong()
-    {
+    void Armstrong() {
         int n = 153;
         int a = n;
 
@@ -22,7 +21,6 @@ public class ArmStrongNumber {
 
             n = n / 10;  // remove last digit
         }
-
         if (sum == a) {
             System.out.println(a + " is an Armstrong number.");
         } else {
@@ -33,7 +31,6 @@ public class ArmStrongNumber {
     }
 
 //...............
-
     void method2( )
     {
         System.out.println("........method 2.......");

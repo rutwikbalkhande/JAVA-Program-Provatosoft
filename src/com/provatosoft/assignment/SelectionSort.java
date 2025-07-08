@@ -13,7 +13,6 @@ public class SelectionSort {
                 for(int i=0; i<length; i++)
                 {
                     int min=i , temp=0;
-
                     for(int j=i+1; j<length; j++)
                     {
                         if(arr[j] < arr[min])

@@ -6,7 +6,6 @@ public class PrimeNo {
     {
         int start =1;
         int end=50;
-
         System.out.println("prime No.");
 
         for(int i=start; i<=end;i++)
