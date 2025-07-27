@@ -1,5 +1,6 @@
 package array;
 
+import javax.management.BadAttributeValueExpException;
 import java.util.*;
 
 public class KthElementSortedArrays {
@@ -13,13 +14,13 @@ public class KthElementSortedArrays {
       space complexity: O(1)
      */
 
-    public static long findKthEleApproch2(int[] array1, int[] array2,int k) {
+    public static long findKthEleApproch1(int[] array1, int[] array2,int k) {
 
         System.out.println(Arrays.toString(array1));
         System.out.println(Arrays.toString(array2));
 
         if (array1.length + array2.length > k) {
-            // throw new  BadRequestException();
+          //   throw new IndexOutOfBoundsException("size of k is large than array");
         }
         int x = 0, y = 0;
         for (int i = 0; i < array1.length + array2.length; i++) {
@@ -38,8 +39,8 @@ public class KthElementSortedArrays {
             }
         }
              return 0;
-
     }
+
     // Approch2
 
     public static long kthElement(int[] nums1, int[] nums2, int n, int m, int k) {
@@ -100,14 +101,14 @@ public class KthElementSortedArrays {
         int k = 5;         // We want the 5th smallest element in the combined array
 
 
-        long result =findKthEleApproch2(nums1 , nums2 , k) ;   // Call the method1,
+        long result1 =findKthEleApproch1(nums1 , nums2 , k) ;   // Call the method1,
 
         // Call the method
         long result2 = kthElement(nums1, nums2, nums1.length, nums2.length, k);
 
         // Output the result
-       System.out.println("The " + k + "-th smallest element in the merged sorted a= "+ result);
+       System.out.println("Approch1= " + k + "-th smallest element in the merged sorted a= "+ result1);
 
-        System.out.println("The " + k + "-th smallest element in the merged sorted a= "+ result2);
+        System.out.println("Approch2= " + k + "-th smallest element in the merged sorted a= "+ result2);
     }
 }

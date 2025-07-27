@@ -2,12 +2,21 @@ package com.provatosoft.assignment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayToArrayList {
 
-    //33. Write a java program to convert Array to ArrayList(List) in java.
+    //33. Write a java program to convert Integer or String Array to ArrayList(List) in java.
 
-    void method1()
+    void method1() {
+
+    Integer arr[] = {1, 5, 3, 4, 6, 8, 9, 4, 7, 6};    // data type integer Required
+
+    List<Integer> list = Arrays.asList(arr);
+        System.out.println("integer Array: "+list);
+}
+
+    void method2()
     {
         String arr[] = { "a" , "b","c","d","e"};
 
@@ -26,7 +35,7 @@ public class ArrayToArrayList {
 
     }
 
-    void method2()
+    void method3()
     {
         System.out.println("method 2.....");
 
@@ -45,6 +54,6 @@ public class ArrayToArrayList {
 
         al.method1();
         al.method2();
-
+        al.method3();
     }
 }
