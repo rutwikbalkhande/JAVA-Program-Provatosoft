@@ -1,7 +1,11 @@
 package com.provatosoft.assignment;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import static java.util.Arrays.asList;
 
 public class StringOccuranceCount {
     //16. Write a java program to count occurrences of each character in String in
@@ -11,7 +15,7 @@ public class StringOccuranceCount {
     public static void main(String[] args) {
 
          String str="Java Hungry";
-
+/*
         Map < Character , Integer > charCountMap = new HashMap<>();
 
         for(char c : str.toCharArray())
@@ -25,14 +29,21 @@ public class StringOccuranceCount {
             }
         }
         System.out.println("character occurance: "+ charCountMap);
+*/
+        List<Integer> list= Arrays.asList( 1 ,1,2,2,2,5,5,4);
 
-        Map<Character , Integer> count =new HashMap<>();
-        for(char c: str.toCharArray())
+        Map<Integer, Integer> map= new HashMap<>();
+
+        for(int c: list)
         {
-            if(count.containsKey(c))
-            {
+            if(map.containsKey(c)){
 
+                map.put(c, map.get(c)+ 1);
+            }
+            else{
+                map.put(c,1);
             }
         }
+        System.out.println(map);
     }
 }

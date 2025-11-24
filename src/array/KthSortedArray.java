@@ -16,7 +16,7 @@ public class KthSortedArray {
         for (int i = 0; i < array1.length + array2.length; i++) {
             if (array1[x] < array2[y]) {
 
-                System.out.println("x:"+array1[x] + " Y:"+ array2[y]);
+                System.out.println("x:"+ array1[x] + " Y:"+ array2[y]);
                 if (i == k - 1) {
                     return array1[x];
                 }

@@ -18,8 +18,9 @@ public class SecondLagestEle {
 
         TreeSet<Integer> ts=new TreeSet<>();
        int i=0;
-      //  for(int i=0;i<arr.length;i++){
-            while(i<arr.length){
+                                    //  for(int i=0;i<arr.length;i++){
+            while(i<arr.length)
+            {
                 ts.add(arr[i]);
                 i++;
         }
@@ -35,7 +36,7 @@ public class SecondLagestEle {
         System.out.println(list.get(2));
     }
     public static void main(String[] args) {
-        int arr[]={1,2,3,7,6,9,4,6,5,8,};
+        int arr[]={1,2,3,7,6,9,4,6,5,8};
 
         System.out.println(Arrays.toString(arr));
 

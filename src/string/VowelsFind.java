@@ -12,7 +12,7 @@ public class VowelsFind {
         //^ inside [] negates the character set. So it removes: all characters except vowels
         // replaceAll = remove non vowel character
 
-        if(!name.matches(vowelFound)){
+        if(!vowelFound.isEmpty()){
             System.out.println("present vowel :" + vowelFound);
             System.out.println("non Vowel char: "+nonVowel);
         }

@@ -7,7 +7,6 @@ public class Deadlock {
         final String bluePen="Blue Pen";
         final String blackPen="Black Pen";
 
-
         Thread personA=new Thread( ()-> {
             synchronized (bluePen) {
                 System.out.println("person A got blue pen");
