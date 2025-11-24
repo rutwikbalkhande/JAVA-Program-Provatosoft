@@ -1,6 +1,7 @@
 package array;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class FirstRepeatingNumber {
     //Q. Find First Repeating Element in the array {only first }
@@ -11,26 +12,28 @@ public class FirstRepeatingNumber {
     public static void main(String[] args) {
 
         int arr[] = {10, 5, 3, 4, 3, 5, 6,10};
-        int index = 0;
 
-        HashSet<Integer> num = new HashSet<>();     //HashSet is checking if element already exists.
-
+        Set<Integer> hs = new HashSet<>();     //HashSet is checking if element already exists.
         Integer firstRepeateNo = null;
 
-        while(index < arr.length){
-            if(!num.add(arr[index])) {         //If arr[index] already in set, it fails to add, and found the first repeating number.
-                firstRepeateNo=arr[index];
-                break;                        //break after repeat found
+        for(int a : arr){
+            if( hs.contains(a) ){
+                firstRepeateNo=a;
+                break;
             }
-            index++;
+            else{
+                hs.add(a);
+            } }
+        if(firstRepeateNo != null){
+            System.out.println("repeateNo: "+ firstRepeateNo);
         }
-            System.out.println("hashset" + num);
+        else{
+            System.out.println("no repeate No");
+        }
 
-        if (firstRepeateNo != null) {               //conditiuon check Reper=ateNo not null then print no. & index
-            System.out.println("First repeating No.: " + firstRepeateNo + " at index: " + index);
-        }
-        else {
-            System.out.println("No repeating No.found.");
-        }
+
+
+
+
     }
 }

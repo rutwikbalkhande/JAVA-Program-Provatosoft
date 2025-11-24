@@ -10,6 +10,8 @@ public class EvenOddPrint {
             if (number % 2 != 0) {
                 try {
                     wait();  // wait for odd thread to print
+
+                    //  Thread.sleep(500)
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

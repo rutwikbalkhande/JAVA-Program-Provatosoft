@@ -95,7 +95,7 @@ public class KthElementSortedArrays {
 }
 
     public static void main(String[] args) {
-        int[] nums1 = {2, 3, 6, 7, 9};
+   /*     int[] nums1 = {2, 3, 6, 7, 9};
         int[] nums2 = {1, 4, 8, 10};
 
         int k = 5;         // We want the 5th smallest element in the combined array
@@ -110,5 +110,8 @@ public class KthElementSortedArrays {
        System.out.println("Approch1= " + k + "-th smallest element in the merged sorted a= "+ result1);
 
         System.out.println("Approch2= " + k + "-th smallest element in the merged sorted a= "+ result2);
+
+    */
+
     }
 }
