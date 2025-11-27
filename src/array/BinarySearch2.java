@@ -9,10 +9,10 @@ public class BinarySearch2 {
     public static void main(String[] args) {
 
         int arr[] = {1, 2, 3, 4, 5, 6, 8, 9};
-        int target = 6;
+        int target = 9;
 
         int low = 0;
-        int high = arr.length - 1;
+        int high = arr.length - 1 ;
         int index = -1;  // default: not found
         int loop=1;      // calculate loop how many times run
 
@@ -20,8 +20,7 @@ public class BinarySearch2 {
 
             int midIndex = low + (high - low) / 2;
 
-            System.out.println("loop: "+ loop);
-            loop++;
+             loop++;                                      //  System.out.println("check loop Run: "+ loop);
 
             if (arr[midIndex] == target) {
                 index = midIndex;
@@ -35,6 +34,8 @@ public class BinarySearch2 {
             }
         }
 
-        System.out.println("index : " +index);
+        System.out.println("check element: " + target);
+        System.out.println("Available On index : " +index);
+        System.out.println("check loop Run: "+ loop);
     }
 }

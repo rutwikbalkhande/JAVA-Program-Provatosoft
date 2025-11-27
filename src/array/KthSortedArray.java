@@ -38,7 +38,7 @@ public class KthSortedArray {
         int num1[]={2, 3, 6, 7, 9};
         int num2[]={1, 4, 8, 10};
 
-        int k= 5;
+        int k= 7;
 
         long result =findKthEleApproch1(num1,num2,k);
 

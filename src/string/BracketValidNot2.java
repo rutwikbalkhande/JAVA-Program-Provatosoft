@@ -16,7 +16,7 @@ public class BracketValidNot2 {
                 stack.push(ch);
             } else if (ch == ')') {
                 if ( stack.pop() != '(') {
-                    balanced = false;;
+                    balanced = false;
                 }
             } else if (ch == '}') {
                 if (stack.isEmpty() || stack.pop() != '{') {
