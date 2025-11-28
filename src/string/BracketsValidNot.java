@@ -5,42 +5,48 @@ import java.util.Map;
 import java.util.Stack;
 
 public class BracketsValidNot {
+// check opening closing brackets are correct or not use stack bez follow LIFO ?
+//        "Push" = add data in stack , "peek()" = get last added element {LIFO based} , "pop()" = delete element
 
     public static void main(String[] args) {
 
         String str = "({[]})";
 
-        Stack<Character> stack =new Stack<>();
+        Stack<Character> st = new Stack<>();
 
-        boolean balenced= false;
+        for (int i = 0; i < str.length(); i++) {
 
-        for(char ch : str.toCharArray()){
+            char ch = str.charAt(i);
 
-            //opening bracket
-            if(ch== '(' || ch== '}' || ch== ']'){
-                 stack.push(ch);
+            // Opening brackets → push
+            if (ch == '(' || ch == '{' || ch == '[') {
+                st.push(ch);
             }
-            else if (ch == ')')
-            {
-               if(stack.pop() != '(' );
-               balenced= false;
-            }
-            else if(ch== '}'){
-                if(stack.pop() != '{');
-                balenced= false;
-            }
-            else if(ch == ']')
-            {
-                if(stack.pop() != '[');
-                balenced= false;
+            // Closing brackets → must match
+            else {
+                if (st.isEmpty()) {
+                    System.out.println("not balance");
+                    return;
+                }
+
+
+                // Check matching pair
+                if ((st.peek() == '(' && ch == ')') || (st.peek() == '{' && ch == '}') || (st.peek() == '[' && ch == ']')) {
+
+                    st.pop();  // matched → remove
+                }
+                else {
+                    System.out.println("not balance");
+                    return;
+                }
             }
         }
-        if(balenced){
-            System.out.println("perfect");
-        }
-        else{
-            System.out.println("not");
-        }
 
+        // 3️⃣ If stack empty → balanced
+        if (st.isEmpty()) {
+            System.out.println("balance");
+        } else {
+            System.out.println("not balance");
+        }
     }
 }
