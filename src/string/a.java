@@ -1,11 +1,23 @@
 package string;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class a {
     public static void main(String[] args) {
 
+        String str = "Java Hungryy";
 
+        Map<Character, Integer> map= new HashMap<>();
+
+        for(char ch: str.toCharArray()){
+            if(map.containsKey(ch))
+            {
+                map.put(ch, map.get(ch) +1 );
+            }
+            else {
+                map.put(ch ,+1);
+            }
+        }
+        System.out.println(map);
     }
-}
+    }
